@@ -8,6 +8,12 @@ that adds client-side ability of livereload for development.
 
 Note: It of cause works only on changes that don't need any server-restart...
 
+Note: Doesn't work on admin-pages yet.
+
 ## Installation
 
     npm install nodebb-plugin-livereload
+
+## Credits
+
+[Andrey Tarantsov](https://github.com/livereload/livereload-js)
