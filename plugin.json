@@ -3,10 +3,13 @@
   "name": "NodeBB LiveReload",
   "description": "Add a live-reload tag to the forum (intended for development)",
   "library": "./index.js",
-  "staticDir": "./public",
+  "staticDirs": {
+    "livereload": "public"
+  },
   "hooks": [
     { "hook": "filter:scripts.get", "method": "addScript" },
-    { "hook": "filter:admin.header.build", "method": "adminBuild", "callbacked": false },
+    { "hook": "filter:admin.scripts.get", "method": "addScript" },
+    { "hook": "filter:admin.header.build", "method": "adminBuild" },
     { "hook": "filter:admin.create_routes", "method": "adminRoute", "callbacked": true }
   ]
 }

@@ -13,7 +13,7 @@ exports =
   addScript: (scripts) ->
     host = meta.config['livereload:host'] || 'localhost'
     port = meta.config['livereload:port'] || '35729'
-    scripts.concat ["plugins/nodebb-plugin-livereload/livereload-js/livereload.js?host=#{host}&port=#{port}"]
+    scripts.concat ["plugins/livereload/livereload-js/livereload.js?host=#{host}&port=#{port}"]
   adminBuild: (custom_header) ->
     custom_header.plugins.push
       route: constants.admin.route
