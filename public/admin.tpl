@@ -4,7 +4,7 @@
 <form>
   <div class="alert alert-info">
     <p>
-      Note that you need to have the client-ability for livereload.<br />
+      Note that you need to have the server-ability for livereload.<br />
       You can use this together with <a href="https://github.com/frissdiegurke/nodebb-grunt-development">NodeBB Grunt Development</a> ;)<br />
       <br />
       <input type="text" data-field="livereload:host" title="Host address" class="form-control pull-left" style="width:200px" placeholder="localhost">
