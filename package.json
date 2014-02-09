@@ -1,0 +1,17 @@
+{
+  "name": "nodebb-plugin-livereload",
+  "version": "0.0.1-1",
+  "description": "Add a live-reload tag to the forum (intended for development)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frissdiegurke/nodebb-plugin-livereload"
+  },
+  "keywords": [
+    "nodebb",
+    "livereload",
+    "live",
+    "reload"
+  ],
+  "license": "MIT"
+}
