@@ -1,11 +1,11 @@
-nodebb-plugin-emoji-extended
+nodebb-plugin-livereload
 ===================
 
-NodeBB Plugin enabling emoji as seen on [Emoji cheat sheet](http://www.emoji-cheat-sheet.com)
+Adds server-side ability of livreload.
 
-Adds mapping of texts like `:)`, `;)`, etc. if [Emoji Skype](https://github.com/julianlam/nodebb-plugin-emoji-skype) isn't enabled.
-
+You may use this in combination with [NodeBB Grunt Development](https://github.com/frissdiegurke/nodebb-grunt-development)
+that adds client-side ability of livereload for development.
 
 ## Installation
 
-    npm install nodebb-plugin-emoji-extended
+    npm install nodebb-plugin-livereload
