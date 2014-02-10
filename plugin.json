@@ -4,12 +4,33 @@
   "description": "Add a live-reload tag to the forum (intended for development)",
   "library": "./index.js",
   "staticDirs": {
-    "livereload": "public"
+    "livereload-js": "client-scripts"
   },
   "hooks": [
-    { "hook": "filter:scripts.get", "method": "addScript" },
-    { "hook": "filter:admin.scripts.get", "method": "addScript" },
-    { "hook": "filter:admin.header.build", "method": "adminBuild" },
-    { "hook": "filter:admin.create_routes", "method": "adminRoute", "callbacked": true }
+    {
+      "hook": "filter:scripts.get",
+      "method": "addScripts"
+    },
+    {
+      "hook": "filter:admin.scripts.get",
+      "method": "addScripts"
+    },
+    {
+      "hook": "filter:admin.header.build",
+      "method": "adminBuild"
+    },
+    {
+      "hook": "filter:admin.create_routes",
+      "method": "adminRoute",
+      "callbacked": true
+    },
+    {
+      "hook": "action:plugin.activate",
+      "method": "configDefaults"
+    },
+    {
+      "hook": "action:app.load",
+      "method": "appLoad"
+    }
   ]
 }
