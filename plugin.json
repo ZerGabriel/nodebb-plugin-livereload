@@ -27,10 +27,6 @@
     {
       "hook": "action:plugin.activate",
       "method": "configDefaults"
-    },
-    {
-      "hook": "action:app.load",
-      "method": "appLoad"
     }
   ]
 }

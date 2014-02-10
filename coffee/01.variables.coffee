@@ -1,8 +1,8 @@
-libPath = nconf.get('url') + '/plugins/livereload-js/lib/livereload.js'
+#libPath = nconf.get('url') + '/plugins/livereload-js/lib/livereload.js'
 
 defaultConfig =
   'host': 'localhost'
-  'port': '35729'
+  'port': 35729
 
 getConfig = (key) ->
   meta.config["livereload:#{key}"] || defaultConfig[key]

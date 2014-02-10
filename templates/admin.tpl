@@ -4,6 +4,8 @@
 <form>
   <div class="alert alert-info">
     <p>
+      <strong>Note that you need to restart the server in order to use the new settings.</strong><br />
+      <br />
       Note that you need to have the server-ability for livereload.<br />
       You can use this together with <a href="https://github.com/frissdiegurke/nodebb-grunt-development">NodeBB Grunt Development</a> ;)<br />
       <br />

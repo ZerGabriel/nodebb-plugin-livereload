@@ -337,7 +337,7 @@
     };
     return Options;
   })();
-  Options.extract = function(document) {
+  Options.extract = function(doc) {
     var element, keyAndValue, m, mm, options, pair, src, _i, _j, _len, _len2, _ref, _ref2;
     _ref = document.getElementsByTagName('script');
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
