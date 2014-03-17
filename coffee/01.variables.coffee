@@ -1,4 +1,4 @@
-libPath = nconf.get('url') + '/plugins/nodebb-plugin-livereload/js/livereload.js'
+libPath = nconf.get('url') + '/plugins/nodebb-plugin-livereload/js/lib/livereload.js'
 
 defaultConfig =
   'host': 'localhost'

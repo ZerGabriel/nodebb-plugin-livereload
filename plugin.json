@@ -4,7 +4,7 @@
   "description": "Add a live-reload tag to the forum (intended for development)",
   "library": "./index.js",
   "staticDirs": {
-    "js": "client-scripts/lib"
+    "js": "client-scripts"
   },
   "scripts": [
     "client-scripts/livereload.js"
@@ -15,9 +15,12 @@
       "method": "adminBuild"
     },
     {
+      "hook": "filter:admin.scripts.get",
+      "method": "scriptsGet"
+    },
+    {
       "hook": "filter:admin.create_routes",
-      "method": "adminRoute",
-      "callbacked": true
+      "method": "adminRoute"
     },
     {
       "hook": "action:plugin.activate",
